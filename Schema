@@ -1,0 +1,51 @@
+CREATE TABLE "card_holder" (
+    "id" SERIAL   NOT NULL,
+    "name" VARCHAR(50)   NOT NULL,
+    CONSTRAINT "pk_card_holder" PRIMARY KEY (
+        "id"
+     )
+);
+
+-- Credit Card
+
+CREATE TABLE "credit_card" (
+    "card" VARCHAR(20)   NOT NULL,
+    "id_card_holder" INT   NOT NULL,
+    CONSTRAINT "pk_credit_card" PRIMARY KEY (
+        "card"
+     )
+);
+
+-- Merchant
+
+CREATE TABLE "merchant" (
+    "id" SERIAL   NOT NULL,
+    "name" VARCHAR(255)   NOT NULL,
+    "id_merchant_category" INT   NOT NULL,
+    CONSTRAINT "pk_merchant" PRIMARY KEY (
+        "id"
+     )
+);
+
+-- Merchant Category
+
+CREATE TABLE "merchant_category" (
+    "id" SERIAL   NOT NULL,
+    "name" VARCHAR(50)   NOT NULL,
+    CONSTRAINT "pk_merchant_category" PRIMARY KEY (
+        "id"
+     )
+);
+
+-- Transaction
+
+CREATE TABLE "transaction" (
+    "id" INT   NOT NULL,
+    "date" TIMESTAMP   NOT NULL,
+    "amount" FLOAT   NOT NULL,
+    "card" VARCHAR(20)   NOT NULL,
+    "id_merchant" INT   NOT NULL,
+    CONSTRAINT "pk_transaction" PRIMARY KEY (
+        "id"
+     )
+);

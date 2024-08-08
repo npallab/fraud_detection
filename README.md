@@ -5,9 +5,8 @@
 The objective of this project is to detect potential fraud in credit card transactions using a structured schema and various SQL queries. The schema includes tables for card holders, credit cards, merchants, merchant categories, and transactions. This report provides an overview of the schema and the SQL queries used to identify suspicious activities and patterns that may indicate fraudulent behavior.
 
 
-##ERD Diagram
-<a href="https://ibb.co/t2NkCnP"><img src="https://i.ibb.co/bvyqdYR/Untitled-1.png" alt="Untitled-1" border="0"></a><br /><a target='_blank' href='https://dedupelist.com/'>unique lines</a><br />
-
+**ERD Diagram**<br>
+<a href="https://ibb.co/t2NkCnP"><img src="https://i.ibb.co/bvyqdYR/Untitled-1.png" alt="Untitled-1" border="0"></a><br /><a target='_blank' href='https://dedupelist.com/'>
 ## Schema
 
 
